@@ -6,7 +6,7 @@
   <link href="https://jingblog.github.io/atom.xml" rel="self"/>
   
   <link href="https://jingblog.github.io/"/>
-  <updated>2022-02-01T06:21:30.833Z</updated>
+  <updated>2022-02-01T12:32:20.022Z</updated>
   <id>https://jingblog.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Markdown语言note</title>
+    <link href="https://jingblog.github.io/2022/02/01/markdown-note/"/>
+    <id>https://jingblog.github.io/2022/02/01/markdown-note/</id>
+    <published>2022-02-01T12:30:00.000Z</published>
+    <updated>2022-02-01T12:32:20.022Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1、什么是Markdown&quot;&gt;1、什么是Markdown?&lt;/h2&gt;
+&lt;h4</summary>
+        
+      
+    
+    
+    
+    <category term="网站相关" scheme="https://jingblog.github.io/categories/%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="markdown" scheme="https://jingblog.github.io/tags/markdown/"/>
+    
+    <category term="html" scheme="https://jingblog.github.io/tags/html/"/>
+    
+    <category term="干货" scheme="https://jingblog.github.io/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>写在前面</title>
     <link href="https://jingblog.github.io/2022/02/01/introduction/"/>
     <id>https://jingblog.github.io/2022/02/01/introduction/</id>
     <published>2022-02-01T05:30:00.000Z</published>
-    <updated>2022-02-01T06:21:30.833Z</updated>
+    <updated>2022-02-01T12:28:11.787Z</updated>
     
     
       
