@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>易安的小窝</title>
+  
+  <subtitle>This is 阿菁 &#39;s world! </subtitle>
+  <link href="https://jingblog.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://jingblog.github.io/"/>
+  <updated>2022-02-01T06:21:30.833Z</updated>
+  <id>https://jingblog.github.io/</id>
+  
+  <author>
+    <name>易安</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>写在前面</title>
+    <link href="https://jingblog.github.io/2022/02/01/introduction/"/>
+    <id>https://jingblog.github.io/2022/02/01/introduction/</id>
+    <published>2022-02-01T05:30:00.000Z</published>
+    <updated>2022-02-01T06:21:30.833Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我是[阿菁]，笔名易安。&lt;br&gt;
+这是易安的第一个网站&lt;br&gt;
+易安会在这个网站上记录关于[科技]的相关内容&lt;br&gt;
+也会分享我的[个人笔记]，[生活趣事]&lt;br&gt;
+欢迎关注我的博客！&lt;/p&gt;
+&lt;p&gt;#一起学习，一起进步！&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="这里是易安" scheme="https://jingblog.github.io/categories/%E8%BF%99%E9%87%8C%E6%98%AF%E6%98%93%E5%AE%89/"/>
+    
+    
+    <category term="认识易安" scheme="https://jingblog.github.io/tags/%E8%AE%A4%E8%AF%86%E6%98%93%E5%AE%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://jingblog.github.io/2022/01/30/hello-world/"/>
+    <id>https://jingblog.github.io/2022/01/30/hello-world/</id>
+    <published>2022-01-30T07:45:23.614Z</published>
+    <updated>2022-02-01T06:21:40.336Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
