@@ -6,7 +6,7 @@
   <link href="https://jingblog.github.io/atom.xml" rel="self"/>
   
   <link href="https://jingblog.github.io/"/>
-  <updated>2022-02-01T12:32:20.022Z</updated>
+  <updated>2022-02-01T12:45:13.813Z</updated>
   <id>https://jingblog.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://jingblog.github.io/2022/02/01/markdown-note/"/>
     <id>https://jingblog.github.io/2022/02/01/markdown-note/</id>
     <published>2022-02-01T12:30:00.000Z</published>
-    <updated>2022-02-01T12:32:20.022Z</updated>
+    <updated>2022-02-01T12:45:13.813Z</updated>
     
     
       
@@ -51,20 +51,17 @@
     <link href="https://jingblog.github.io/2022/02/01/introduction/"/>
     <id>https://jingblog.github.io/2022/02/01/introduction/</id>
     <published>2022-02-01T05:30:00.000Z</published>
-    <updated>2022-02-01T12:28:11.787Z</updated>
+    <updated>2022-02-01T12:47:26.646Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;我是[阿菁]，笔名易安。&lt;br&gt;
+    <summary type="html">&lt;p&gt;我是&lt;strong&gt;阿菁&lt;/strong&gt;，笔名&lt;strong&gt;易安&lt;/strong&gt;。&lt;br&gt;
 这是易安的第一个网站&lt;br&gt;
-易安会在这个网站上记录关于[科技]的相关内容&lt;br&gt;
-也会分享我的[个人笔记]，[生活趣事]&lt;br&gt;
-欢迎关注我的博客！&lt;/p&gt;
-&lt;p&gt;#一起学习，一起进步！&lt;/p&gt;
-</summary>
+易安会在这个网站上记录关于&lt;u&gt;科技&lt;/u&gt;的相关内容&lt;br&gt;
+也会分享我的&lt;strong&gt;个人笔记&lt;/strong&gt;，&lt;strong&gt;生活趣事&lt;</summary>
         
       
     
