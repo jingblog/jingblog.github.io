@@ -6,7 +6,7 @@
   <link href="https://jingblog.github.io/atom.xml" rel="self"/>
   
   <link href="https://jingblog.github.io/"/>
-  <updated>2022-02-01T12:59:09.380Z</updated>
+  <updated>2022-02-04T15:18:33.676Z</updated>
   <id>https://jingblog.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python输出表格</title>
+    <link href="https://jingblog.github.io/2022/02/04/python-1-notes/"/>
+    <id>https://jingblog.github.io/2022/02/04/python-1-notes/</id>
+    <published>2022-02-04T15:16:33.927Z</published>
+    <updated>2022-02-04T15:18:33.676Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-导入PrettyTable库&quot;&gt;1.导入PrettyTable库&lt;/h2&gt;
+&lt;p&gt;需要输出中文，所以要将编码方式设为&amp;quot;utf-8&amp;quot;，不同版本的设置方式不同。&lt;/p&gt;
+&lt;p&gt;在terminal中输入&lt;strong&gt;python</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://jingblog.github.io/categories/python/"/>
+    
+    
+    <category term="输出表格" scheme="https://jingblog.github.io/tags/%E8%BE%93%E5%87%BA%E8%A1%A8%E6%A0%BC/"/>
+    
+    <category term="python相关" scheme="https://jingblog.github.io/tags/python%E7%9B%B8%E5%85%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown语言note</title>
