@@ -6,7 +6,7 @@
   <link href="https://jingblog.github.io/atom.xml" rel="self"/>
   
   <link href="https://jingblog.github.io/"/>
-  <updated>2022-02-04T15:18:33.676Z</updated>
+  <updated>2022-03-27T13:58:47.473Z</updated>
   <id>https://jingblog.github.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lingo语言</title>
+    <link href="https://jingblog.github.io/2022/03/27/lingo-notes/"/>
+    <id>https://jingblog.github.io/2022/03/27/lingo-notes/</id>
+    <published>2022-03-27T14:00:00.000Z</published>
+    <updated>2022-03-27T13:58:47.473Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;1.变量定界函数&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;@bin(x)：x为0或1&lt;/li&gt;
+&lt;li&gt;@gin(x)：x为整数&lt;/li&gt;
+&lt;li&gt;@free(x)：x为实数&lt;/li&gt;
+&lt;li&gt;@bnd(l,x,u)：x为[l,u]之间的实数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;lingo默</summary>
+        
+      
+    
+    
+    
+    <category term="lingo" scheme="https://jingblog.github.io/categories/lingo/"/>
+    
+    
+    <category term="干货" scheme="https://jingblog.github.io/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+    <category term="lingo" scheme="https://jingblog.github.io/tags/lingo/"/>
+    
+  </entry>
   
   <entry>
     <title>Python输出表格</title>
