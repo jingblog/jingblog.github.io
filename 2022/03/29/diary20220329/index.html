@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Python输出表格, GitHub, 计科, 竞赛, 科研，计算机科学与技术，编程，开发">
+    <meta name="keywords" content="浅浅记录一下, GitHub, 计科, 竞赛, 科研，计算机科学与技术，编程，开发">
     <meta name="description" content="计科生阿菁，笔名易安，记录生活，记录科技，记录笔记">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Python输出表格 | 易安的小窝</title>
+    <title>浅浅记录一下 | 易安的小窝</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Python输出表格</h1>
+                    <h1 class="description center-align post-title">浅浅记录一下</h1>
                 </div>
             </div>
         </div>
@@ -432,12 +432,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%BE%93%E5%87%BA%E8%A1%A8%E6%A0%BC/">
-                                <span class="chip bg-color">输出表格</span>
-                            </a>
-                        
-                            <a href="/tags/python%E7%9B%B8%E5%85%B3/">
-                                <span class="chip bg-color">python相关</span>
+                            <a href="/tags/%E5%BF%83%E6%83%85/">
+                                <span class="chip bg-color">心情</span>
                             </a>
                         
                     </div>
@@ -448,8 +444,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/python/" class="post-category">
-                                python
+                            <a href="/categories/%E5%BF%83%E6%83%85%E6%97%A5%E8%AE%B0/" class="post-category">
+                                心情日记
                             </a>
                         
                     </div>
@@ -461,28 +457,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-02-04
+                    2022-03-29
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-02-04
+                    2022-03-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    893
+                    320
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    1 分
                 </div>
                 
 
@@ -502,250 +498,73 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-导入PrettyTable库">1.导入PrettyTable库</h2>
-<p>需要输出中文，所以要将编码方式设为&quot;utf-8&quot;，不同版本的设置方式不同。</p>
-<p>在terminal中输入<strong>python --version</strong>获取当前python版本。</p>
-<h3 id="1-python-2-X">1)python 2.X</h3>
-<pre class=" language-language-python"><code class="language-language-python">#  编码方式
-import sys
-reload(sys)
-sys.setdefaultencoding("utf-8") 
-
-#  导入库
-from prettytable import PrettyTable
-</code></pre>
-<h3 id="2）python3-X-3-3">2）python3.X-3.3</h3>
-<pre class=" language-language-python"><code class="language-language-python">#  编码方式
-import imp, sys
-imp.reload(sys)
-
-#导入库
-from prettytable import PrettyTable
-</code></pre>
-<h3 id="3）python3-4以上">3）python3.4以上</h3>
-<pre class=" language-language-python"><code class="language-language-python">#  编码方式
-import importlib, sys
-importlib.reload(sys)
-
-#  导入库
-from prettytable import PrettyTable
-</code></pre>
-<p>注：本文代码按照<strong>python3.9</strong>的格式编写</p>
-<h2 id="2-安装">2.安装</h2>
-<p>prettytable库不是python的内置库，需要先安装</p>
-<p>在项目terminal中输入<strong>pip install prettytable</strong>即可安装</p>
-<h2 id="3-代码示例">3.代码示例</h2>
-<pre class=" language-language-python"><code class="language-language-python">#  编码方式
-import importlib, sys
-importlib.reload(sys)
-
-#  导入库
-from prettytable import PrettyTable
- 
-#  输出
-table = PrettyTable(['学号', '姓名', '年龄'])  # 表头
-table.add_row(['1', '张三', '14'])  # 第一行
-table.add_row(['2', '李四', '14'])  # 第二行
-table.add_row(['3', '王五', '13'])
-table.add_row(['4', '郭一', '15'])
-table.add_row(['5', '张二', '13'])
-table.add_row(['6', '李一', '12'])
-table.add_row(['7', '王三', '14'])
-table.add_row(['8', '韦七', '15'])
-table.add_row(['9', '戴六', '15'])
-print(table)
-</code></pre>
-<p>运行结果</p>
-<pre class=" language-language-python"><code class="language-language-python">+------+------+------+
-| 学号 | 姓名 | 年龄 |
-+------+------+------+
-|  1   | 张三 |  14  |
-|  2   | 李四 |  14  |
-|  3   | 王五 |  13  |
-|  4   | 郭一 |  15  |
-|  5   | 张二 |  13  |
-|  6   | 李一 |  12  |
-|  7   | 王三 |  14  |
-|  8   | 韦七 |  15  |
-|  9   | 戴六 |  15  |
-+------+------+------+
-</code></pre>
-<p>如果按列表示，则使用<strong>table.add_column</strong></p>
-<h2 id="4-从csv文件中添加数据">4.从csv文件中添加数据</h2>
-<pre class=" language-language-python"><code class="language-language-python">#  编码方式
-import importlib, sys
-importlib.reload(sys)
-
-#  导入库
-from prettytable import PrettyTable
-from prettytable import from_csv 
- 
-table = PrettyTable()
-fp = open("file.csv", "r") 
-table = from_csv(fp) 
-print(table)
-fp.close()
-</code></pre>
-<p>运行结果</p>
-<pre class=" language-language-python"><code class="language-language-python">+------+------+------+
-| 学号 | 姓名 | 年龄 |
-+------+------+------+
-|  1   | 张三 |  14  |
-|  2   | 李四 |  14  |
-|  3   | 王五 |  13  |
-|  4   | 郭一 |  15  |
-|  5   | 张二 |  13  |
-|  6   | 李一 |  12  |
-|  7   | 王三 |  14  |
-|  8   | 韦七 |  15  |
-|  9   | 戴六 |  15  |
-+------+------+------+
-</code></pre>
-<p>注：只能是<strong>csv文件</strong>。如果是xls文件，可以另存为csv文件。</p>
-<h2 id="5-选择性输出">5.选择性输出</h2>
-<h3 id="1）输出指定列">1）输出指定列</h3>
-<pre class=" language-language-python"><code class="language-language-python">print(table.get_string(fields=['姓名']))
-</code></pre>
-<p>输出结果</p>
-<pre class=" language-language-python"><code class="language-language-python">+------+
-| 姓名 |
-+------+
-| 张三 |
-| 李四 |
-| 王五 |
-| 郭一 |
-| 张二 |
-| 李一 |
-| 王三 |
-| 韦七 |
-| 戴六 |
-+------+
-</code></pre>
-<h3 id="2）输出i-j行">2）输出i-j行</h3>
-<pre class=" language-language-python"><code class="language-language-python">print(table.get_string(start=1, end=4))
-</code></pre>
-<p>输出结果</p>
-<pre class=" language-language-python"><code class="language-language-python">+------+------+------+
-| 学号 | 姓名 | 年龄 |
-+------+------+------+
-|  2   | 李四 |  14  |
-|  3   | 王五 |  13  |
-|  4   | 郭一 |  15  |
-+------+------+------+
-</code></pre>
-<p>表头不算入，第一行输出表头。</p>
-<p><strong>行数从0开始</strong></p>
-<p>start = 1, end = 4 ,表示表格内容的<strong>第1 - 3行</strong>，即第start行计入，第end行不计入。</p>
-<h3 id="3）将表格切片">3）将表格切片</h3>
-<pre class=" language-language-python"><code class="language-language-python">new_table = table[2:5].get_string(fields=['姓名'])
-print(new_table)
-</code></pre>
-<p>输出结果</p>
-<pre class=" language-language-python"><code class="language-language-python">+------+
-| 姓名 |
-+------+
-| 王五 |
-| 郭一 |
-| 张二 |
-+------+
-</code></pre>
-<h2 id="6-多种输出样式">6.多种输出样式</h2>
-<pre class=" language-language-python"><code class="language-language-python">#  编码方式
-import importlib, sys
-
-importlib.reload(sys)
-
-#  导入库
-from prettytable import PrettyTable
-from prettytable import MSWORD_FRIENDLY
-from prettytable import PLAIN_COLUMNS
-from prettytable import RANDOM
-from prettytable import DEFAULT
-
-#  输出
-table = PrettyTable(['学号', '姓名', '年龄'])  # 表头
-table.add_row(['1', '张三', '14'])  # 第一行
-table.add_row(['2', '李四', '14'])  # 第二行
-table.add_row(['3', '王五', '13'])
-table.add_row(['4', '郭一', '15'])
-table.add_row(['5', '张二', '13'])
-table.add_row(['6', '李一', '12'])
-table.add_row(['7', '王三', '14'])
-table.add_row(['8', '韦七', '15'])
-table.add_row(['9', '戴六', '15'])
-table.set_style(MSWORD_FRIENDLY)
-print("MSWORD_FRIENDLY")
-print(table)
-print()
-table.set_style(PLAIN_COLUMNS)
-print("PLAIN_COLUMNS")
-print(table)
-print()
-table.set_style(RANDOM)
-print("RANDOM")
-print(table)
-print()
-table.set_style(DEFAULT)
-print("DEFAULT")
-print(table)
-print()
-</code></pre>
-<p>输出结果</p>
-<pre class=" language-language-python"><code class="language-language-python">MSWORD_FRIENDLY
-| 学号 | 姓名 | 年龄 |
-|  1   | 张三 |  14  |
-|  2   | 李四 |  14  |
-|  3   | 王五 |  13  |
-|  4   | 郭一 |  15  |
-|  5   | 张二 |  13  |
-|  6   | 李一 |  12  |
-|  7   | 王三 |  14  |
-|  8   | 韦七 |  15  |
-|  9   | 戴六 |  15  |
-
-PLAIN_COLUMNS
-学号        姓名        年龄        
- 1          张三         14         
- 2          李四         14         
- 3          王五         13         
- 4          郭一         15         
- 5          张二         13         
- 6          李一         12         
- 7          王三         14         
- 8          韦七         15         
- 9          戴六         15         
-
-RANDOM
-''''''''''''''''''''''''''''
-  学号     姓名     年龄    
-''''''''''''''''''''''''''''
-   1       张三      14     
-   2       李四      14     
-   3       王五      13     
-   4       郭一      15     
-   5       张二      13     
-   6       李一      12     
-   7       王三      14     
-   8       韦七      15     
-   9       戴六      15     
-''''''''''''''''''''''''''''
-
-DEFAULT
-+------+------+------+
-| 学号 | 姓名 | 年龄 |
-+------+------+------+
-|  1   | 张三 |  14  |
-|  2   | 李四 |  14  |
-|  3   | 王五 |  13  |
-|  4   | 郭一 |  15  |
-|  5   | 张二 |  13  |
-|  6   | 李一 |  12  |
-|  7   | 王三 |  14  |
-|  8   | 韦七 |  15  |
-|  9   | 戴六 |  15  |
-+------+------+------+
-
-</code></pre>
+                <blockquote>
+<p>只有一个小小的期望</p>
+<blockquote>
+<p>有那么一天</p>
+<blockquote>
+<p>可以躺在床上</p>
+<blockquote>
+<p>什么都不用想</p>
+<blockquote>
+<p>什么都不用干</p>
+<blockquote>
+<p>或是睡觉</p>
+<blockquote>
+<p>或是刷刷手机</p>
+<blockquote>
+<p>如此</p>
+<blockquote>
+<p>足矣！</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>可事实总是如此残酷</p>
+<p>一个接一个的项目组</p>
+<p>一次接一次的比赛</p>
+<p>还有那上不完的课和睡不够的觉</p>
+<ul>
+<li>大创还没搞</li>
+<li>机器学习的书还没翻开</li>
+<li>还不知道目标检测的实质</li>
+<li>python依旧停留在基础操作</li>
+<li>robocup依旧踢不过别人</li>
+<li>家庭仿真还没开始改进</li>
+<li>CCCC天梯赛即将开始</li>
+<li>挑战程序设计还没翻开</li>
+<li>大英赛也在不久的几天</li>
+<li>每日英语听力vip还没用</li>
+<li>六级词汇还差大部分</li>
+<li>六级真题还没开始刷</li>
+<li>作业清单还没变</li>
+<li>实验报告还没开始写</li>
+<li>课程设计还没开始搞</li>
+<li>数学建模还没预习</li>
+<li>…</li>
+</ul>
+<p>不知什么时候</p>
+<p>不知什么时候这一切才会结束</p>
+<p>才能好好休息一下</p>
+<p>要求不高</p>
+<p>给我一天时间</p>
+<p>无忧无虑躺在床上</p>
+<p>就好。</p>
+<p>或许自从踏入计科门</p>
+<p>就再无如此可能</p>
+<p>但是</p>
+<p>幻想一下</p>
+<p>也好。</p>
+<p>什么都不用干</p>
+<p>或是睡觉</p>
+<p>或是刷刷手机</p>
+<p>如此</p>
+<p>足矣！</p>
 
                 
             </div>
@@ -772,7 +591,7 @@ DEFAULT
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jingblog.github.io/2022/02/04/python-1-notes/">https://jingblog.github.io/2022/02/04/python-1-notes/</a>
+                    <a href="https://jingblog.github.io/2022/03/29/diary20220329/">https://jingblog.github.io/2022/03/29/diary20220329/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -810,12 +629,8 @@ DEFAULT
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%BE%93%E5%87%BA%E8%A1%A8%E6%A0%BC/">
-                                    <span class="chip bg-color">输出表格</span>
-                                </a>
-                            
-                                <a href="/tags/python%E7%9B%B8%E5%85%B3/">
-                                    <span class="chip bg-color">python相关</span>
+                                <a href="/tags/%E5%BF%83%E6%83%85/">
+                                    <span class="chip bg-color">心情</span>
                                 </a>
                             
                         </div>
@@ -985,9 +800,60 @@ DEFAULT
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/03/29/diary20220329/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="浅浅记录一下">
+                        
+                        <span class="card-title">浅浅记录一下</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-29
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%BF%83%E6%83%85%E6%97%A5%E8%AE%B0/" class="post-category">
+                                    心情日记
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%BF%83%E6%83%85/">
+                        <span class="chip bg-color">心情</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2022/03/27/lingo-notes/">
                     <div class="card-image">
@@ -1005,9 +871,9 @@ DEFAULT
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1029,63 +895,6 @@ DEFAULT
                     
                     <a href="/tags/lingo/">
                         <span class="chip bg-color">lingo</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/02/01/markdown-note/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Markdown语言note">
-                        
-                        <span class="card-title">Markdown语言note</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-01
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/" class="post-category">
-                                    网站相关
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/markdown/">
-                        <span class="chip bg-color">markdown</span>
-                    </a>
-                    
-                    <a href="/tags/html/">
-                        <span class="chip bg-color">html</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%B9%B2%E8%B4%A7/">
-                        <span class="chip bg-color">干货</span>
                     </a>
                     
                 </div>
