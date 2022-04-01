@@ -479,7 +479,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    956
+                    955
                 </div>
                 
 
@@ -522,7 +522,7 @@ xlabel('x轴');
 ylabel('y轴');
 legend('y1','y2');
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E5%9B%BE%E5%BD%A2%E6%A0%87%E6%B3%A8.png" alt="图形标注.png"></p>
+<p><img src="images/%E5%9B%BE%E5%BD%A2%E6%A0%87%E6%B3%A8.png" alt="图形标注"></p>
 <p>注意要放在plot<mark><strong>后面</strong></mark>。</p>
 <h2 id="2-坐标控制">2). 坐标控制</h2>
 <pre class=" language-language-matlab"><code class="language-language-matlab">axis([xmin xmax ymin ymax zmin zmax]) % x,y轴坐标控制
@@ -540,28 +540,28 @@ hold on % 刷新页面
 y=sin(x);
 plot(x,y)
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E6%99%AE%E9%80%9A.png" alt="普通.png"></p>
+<p><img src="images/%E6%99%AE%E9%80%9A.png" alt="普通.png"></p>
 <h3 id="b-参数形式">b.参数形式</h3>
 <pre class=" language-language-matlab"><code class="language-language-matlab">t=0:pi/50:2*pi;
 x=sin(t);
 y=cos(t);
 plot(x,y)
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E5%8F%82%E6%95%B0.png" alt="参数.png"></p>
+<p><img src="images/%E5%8F%82%E6%95%B0.png" alt="参数.png"></p>
 <h3 id="c-多输出函数">c.多输出函数</h3>
 <pre class=" language-language-matlab"><code class="language-language-matlab">x=0:pi/50:2*pi;
 y=cos(x);
 z=sin(x);
 plot(x,y,x,z)
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E5%A4%9A%E8%BE%93%E5%87%BA.png" alt="多输出.png"></p>
+<p><img src="images/%E5%A4%9A%E8%BE%93%E5%87%BA.png" alt="多输出.png"></p>
 <h3 id="d-矩阵输出">d.矩阵输出</h3>
 <pre class=" language-language-matlab"><code class="language-language-matlab">A=pascal(5);
 plot(A)
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E7%9F%A9%E9%98%B5.png" alt="矩阵.png"></p>
+<p><img src="images/%E7%9F%A9%E9%98%B5.png" alt="矩阵.png"></p>
 <h2 id="2-自定义格式">2).自定义格式</h2>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%BC%E5%BC%8F.png" alt="自定义格式"></p>
+<p><img src="images/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%BC%E5%BC%8F.png" alt="自定义格式"></p>
 <p>举例：</p>
 <pre class=" language-language-matlab"><code class="language-language-matlab">x=0:pi/50:2*pi;
 y1=sin(x);
@@ -571,7 +571,7 @@ y3=tan(x);
 plot(x,y1,'--',x,y2,'b',x,y3,'r.')
 axis([0,2*pi,-10,10]);
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%BC%E5%BC%8F%E8%BE%93%E5%87%BA.png" alt="自定义格式输出.png"></p>
+<p><img src="images/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%BC%E5%BC%8F%E8%BE%93%E5%87%BA.png" alt="自定义格式输出.png"></p>
 <h2 id="3-双纵坐标">3).双纵坐标</h2>
 <pre class=" language-language-matlab"><code class="language-language-matlab">x=0:pi/50:2*pi;
 y1=sin(x);
@@ -579,7 +579,7 @@ y2=cos(x);
 plotyy(x,y1,x,y2)
 axis([0,2*pi,-2,2]);
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E5%8F%8C%E7%BA%B5%E5%9D%90%E6%A0%87.png" alt="双纵坐标.png"></p>
+<p><img src="images/%E5%8F%8C%E7%BA%B5%E5%9D%90%E6%A0%87.png" alt="双纵坐标.png"></p>
 <h2 id="4-直方图">4).直方图</h2>
 <p>条形图： bar(x,y,‘自定义格式’)</p>
 <p>阶梯图： stairs(x,y,‘自定义格式’)</p>
@@ -608,19 +608,19 @@ stem(x,y,'k');
 title('stem(x,y,''k'')');
 axis([0, 7, 0,40]);
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E7%9B%B4%E6%96%B9%E5%9B%BE.png" alt="直方图.png"></p>
+<p><img src="images/%E7%9B%B4%E6%96%B9%E5%9B%BE.png" alt="直方图.png"></p>
 <p>其中subplot是多区域绘图，subplot(‘行数’,‘列数’,‘第几个区域’)</p>
 <h2 id="5-极坐标图形">5).极坐标图形</h2>
 <pre class=" language-language-matlab"><code class="language-language-matlab">theta=0:pi/50:2*pi;
 r=sin(theta);
 polarplot(theta,r,'r')
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E6%9E%81%E5%9D%90%E6%A0%87.png" alt="极坐标.png"></p>
+<p><img src="images/%E6%9E%81%E5%9D%90%E6%A0%87.png" alt="极坐标.png"></p>
 <h2 id="6-饼图">6).饼图</h2>
 <pre class=" language-language-matlab"><code class="language-language-matlab">x=[0.1,0.2,0.3,0.4];
 pie(x)
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E9%A5%BC%E5%9B%BE.png" alt="饼图.png"></p>
+<p><img src="images/%E9%A5%BC%E5%9B%BE.png" alt="饼图.png"></p>
 <h2 id="7-对数绘图">7).对数绘图</h2>
 <pre class=" language-language-matlab"><code class="language-language-matlab">subplot(2,3,1);
 x=[1:1:100];
@@ -648,7 +648,7 @@ semilogy(x,x.^3);
 grid on;
 title 'semilogy logy=x^3';
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E5%AF%B9%E6%95%B0.png" alt="对数.png"></p>
+<p><img src="images/%E5%AF%B9%E6%95%B0.png" alt="对数.png"></p>
 <h1>3.三维绘图</h1>
 <h2 id="1-基本运用">1).基本运用</h2>
 <pre class=" language-language-matlab"><code class="language-language-matlab">t=0:pi/50:2*pi;
@@ -663,7 +663,7 @@ zlabel('Z');
 grid on;
 axis([-8,8,-8,8,-8,8]);
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E6%99%AE%E9%80%9A%E4%B8%89%E7%BB%B4.png" alt="普通三维.png"></p>
+<p><img src="images/%E6%99%AE%E9%80%9A%E4%B8%89%E7%BB%B4.png" alt="普通三维.png"></p>
 <h2 id="2-三维曲面的三种形式">2).三维曲面的三种形式</h2>
 <h3 id="a-mesh">a.mesh</h3>
 <p>绘制网格图</p>
@@ -676,7 +676,7 @@ ylabel('y-axis');
 zlabel('z-axis');
 title('mesh');
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E4%B8%89%E7%BB%B4%E6%9B%B2%E9%9D%A2mesh.png" alt="三维曲面mesh.png"></p>
+<p><img src="images/%E4%B8%89%E7%BB%B4%E6%9B%B2%E9%9D%A2mesh.png" alt="三维曲面mesh.png"></p>
 <h3 id="b-surf">b.surf</h3>
 <p>绘制曲面图</p>
 <pre class=" language-language-matlab"><code class="language-language-matlab">x=0:0.1:2*pi;
@@ -688,9 +688,9 @@ ylabel('y-axis');
 zlabel('z-axis');
 title('mesh');
 </code></pre>
-<img title="" src="绘图/三维曲面surf.png" alt="三维曲面surf.png" data-align="inline">
+<img title="" src="images/三维曲面surf.png" alt="三维曲面surf.png" data-align="inline">
 <h3 id="c-plot3">c.plot3</h3>
-<p>简单绘图，由线条组成</p>
+<p>简单images，由线条组成</p>
 <pre class=" language-language-matlab"><code class="language-language-matlab">x=0:0.1:2*pi;
 [x,y]=meshgrid(x);
 z=sin(y).*cos(x);
@@ -700,22 +700,22 @@ ylabel('y-axis');
 zlabel('z-axis');
 title('plot3');
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E4%B8%89%E7%BB%B4%E6%9B%B2%E9%9D%A2plot3.png" alt="三维曲面plot3"></p>
+<p><img src="images/%E4%B8%89%E7%BB%B4%E6%9B%B2%E9%9D%A2plot3.png" alt="三维曲面plot3"></p>
 <h2 id="3-三维曲面">3).三维曲面</h2>
 <pre class=" language-language-matlab"><code class="language-language-matlab">[x,y,z]=sphere(100);
 plot3(x,y,z)
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E4%B8%89%E7%BB%B4%E7%90%83%E9%9D%A2.png" alt="三维球面"></p>
+<p><img src="images/%E4%B8%89%E7%BB%B4%E7%90%83%E9%9D%A2.png" alt="三维球面"></p>
 <h2 id="4-三维柱面">4).三维柱面</h2>
 <pre class=" language-language-matlab"><code class="language-language-matlab">[x,y,z]=cylinder(100,100);
 plot3(x,y,z)
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E4%B8%89%E7%BB%B4%E6%9F%B1%E9%9D%A2.png" alt="三维柱面"></p>
+<p><img src="images/%E4%B8%89%E7%BB%B4%E6%9F%B1%E9%9D%A2.png" alt="三维柱面"></p>
 <h2 id="5-多峰函数">5).多峰函数</h2>
 <pre class=" language-language-matlab"><code class="language-language-matlab">[x,y,z]=peaks(30);
 mesh(x,y,z)
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E5%A4%9A%E5%B3%B0%E5%87%BD%E6%95%B0.png" alt="多峰函数"></p>
+<p><img src="images/%E5%A4%9A%E5%B3%B0%E5%87%BD%E6%95%B0.png" alt="多峰函数"></p>
 <h2 id="6-三维直方图">6).三维直方图</h2>
 <p>在二维直方图函数后加3</p>
 <pre class=" language-language-matlab"><code class="language-language-matlab">subplot(2,2,1);
@@ -731,7 +731,7 @@ pie3([2347,1827,2043,3025]);
 subplot(2,2,4);
 fill3(rand(3,5),rand(3,5),rand(3,5),'y');
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E4%B8%89%E7%BB%B4%E7%9B%B4%E6%96%B9%E5%9B%BE%E5%92%8C%E9%A5%BC%E5%9B%BE.png" alt="三维直方图和饼图"></p>
+<p><img src="images/%E4%B8%89%E7%BB%B4%E7%9B%B4%E6%96%B9%E5%9B%BE%E5%92%8C%E9%A5%BC%E5%9B%BE.png" alt="三维直方图和饼图"></p>
 <h2 id="7-多视角">7).多视角</h2>
 <p>view(az,el)</p>
 <p>默认方位角az为37.5度，仰角el为30度。</p>
@@ -767,7 +767,7 @@ xlabel('x');
 ylabel('y');
 zlabel('z');
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E4%B8%89%E7%BB%B4%E5%A4%9A%E8%A7%86%E8%A7%92.png" alt="三维多视角"></p>
+<p><img src="images/%E4%B8%89%E7%BB%B4%E5%A4%9A%E8%A7%86%E8%A7%92.png" alt="三维多视角"></p>
 <h1>4.图形的裁剪</h1>
 <pre class=" language-language-matlab"><code class="language-language-matlab">x=0:pi/50:4*pi;
 y=sin(x);
@@ -776,7 +776,7 @@ x(i)=NaN;
 plot(x,y);
 axis([0,4*pi,-1,1])
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E5%9B%BE%E5%BD%A2%E7%9A%84%E8%A3%81%E5%89%AA.png" alt="图形的裁剪"></p>
+<p><img src="images/%E5%9B%BE%E5%BD%A2%E7%9A%84%E8%A3%81%E5%89%AA.png" alt="图形的裁剪"></p>
 <h1>5.隐函数作图</h1>
 <pre class=" language-language-matlab"><code class="language-language-matlab">subplot(2,2,1);
 ezplot('x^2+y^2-9');
@@ -790,7 +790,7 @@ ezplot('cos(tan(pi*x))',[0,1]);
 subplot(2,2,4);
 ezplot('8*cos(t)','4*sqrt(2)*sin(t)',[0,2*pi]);
 </code></pre>
-<p><img src="%E7%BB%98%E5%9B%BE%5C%E9%9A%90%E5%87%BD%E6%95%B0%E4%BD%9C%E5%9B%BE.png" alt="隐函数作图"></p>
+<p><img src="images/%E9%9A%90%E5%87%BD%E6%95%B0%E4%BD%9C%E5%9B%BE.png" alt="隐函数作图"></p>
 
                 
             </div>
