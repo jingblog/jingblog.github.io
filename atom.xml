@@ -6,7 +6,7 @@
   <link href="https://jingblog.github.io/atom.xml" rel="self"/>
   
   <link href="https://jingblog.github.io/"/>
-  <updated>2022-03-29T07:27:59.275Z</updated>
+  <updated>2022-04-01T14:15:45.967Z</updated>
   <id>https://jingblog.github.io/</id>
   
   <author>
@@ -17,37 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>浅浅记录一下</title>
-    <link href="https://jingblog.github.io/2022/03/29/diary20220329/"/>
-    <id>https://jingblog.github.io/2022/03/29/diary20220329/</id>
-    <published>2022-03-29T08:00:00.000Z</published>
-    <updated>2022-03-29T07:27:59.275Z</updated>
+    <title>matlab绘图</title>
+    <link href="https://jingblog.github.io/2022/04/01/matlab-plot1/"/>
+    <id>https://jingblog.github.io/2022/04/01/matlab-plot1/</id>
+    <published>2022-04-01T14:30:00.000Z</published>
+    <updated>2022-04-01T14:15:45.967Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;只有一个小小的期望&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;有那么一天&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;可以躺在床上&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;什么都不用想&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;什么都不用干&lt;/p&gt;
-&lt;bl</summary>
+    <summary type="html">&lt;h1&gt;1.辅助绘图&lt;/h1&gt;
+&lt;h2</summary>
         
       
     
     
     
-    <category term="心情日记" scheme="https://jingblog.github.io/categories/%E5%BF%83%E6%83%85%E6%97%A5%E8%AE%B0/"/>
+    <category term="MATLAB" scheme="https://jingblog.github.io/categories/MATLAB/"/>
     
     
-    <category term="心情" scheme="https://jingblog.github.io/tags/%E5%BF%83%E6%83%85/"/>
+    <category term="干货" scheme="https://jingblog.github.io/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+    <category term="MATLAB" scheme="https://jingblog.github.io/tags/MATLAB/"/>
+    
+    <category term="绘图" scheme="https://jingblog.github.io/tags/%E7%BB%98%E5%9B%BE/"/>
     
   </entry>
   
