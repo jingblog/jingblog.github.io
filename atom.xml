@@ -6,7 +6,7 @@
   <link href="https://jingblog.github.io/atom.xml" rel="self"/>
   
   <link href="https://jingblog.github.io/"/>
-  <updated>2022-04-01T14:43:21.030Z</updated>
+  <updated>2022-04-03T03:46:31.569Z</updated>
   <id>https://jingblog.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://jingblog.github.io/2022/04/03/matlab-data1/"/>
+    <id>https://jingblog.github.io/2022/04/03/matlab-data1/</id>
+    <published>2022-04-03T03:45:40.376Z</published>
+    <updated>2022-04-03T03:46:31.569Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;1.数据统计分析&lt;/h1&gt;
+&lt;h2 id=&quot;1-求矩阵的最大元素和最小元素&quot;&gt;1).求矩阵的最大元素和最小元素&lt;/h2&gt;
+&lt;p&gt;使用max和min函数&lt;/p&gt;
+&lt;h3 id=&quot;a-向量&quot;&gt;a.向量&lt;/h3&gt;
+&lt;pre class=&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>matlab绘图</title>
