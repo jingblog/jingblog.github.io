@@ -6,7 +6,7 @@
   <link href="https://jingblog.github.io/atom.xml" rel="self"/>
   
   <link href="https://jingblog.github.io/"/>
-  <updated>2022-04-03T04:27:14.049Z</updated>
+  <updated>2022-04-03T04:39:24.452Z</updated>
   <id>https://jingblog.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://jingblog.github.io/2022/04/03/matlab-data1/"/>
     <id>https://jingblog.github.io/2022/04/03/matlab-data1/</id>
     <published>2022-04-03T04:20:00.000Z</published>
-    <updated>2022-04-03T04:27:14.049Z</updated>
+    <updated>2022-04-03T04:39:24.452Z</updated>
     
     
       
@@ -29,9 +29,9 @@
         
         
     <summary type="html">&lt;h1&gt;1.数据统计分析&lt;/h1&gt;
-&lt;h2 id=&quot;1-求矩阵的最大元素和最小元素&quot;&gt;1).求矩阵的最大元素和最小元素&lt;/h2&gt;
+&lt;h3 id=&quot;1-求矩阵的最大元素和最小元素&quot;&gt;1).求矩阵的最大元素和最小元素&lt;/h3&gt;
 &lt;p&gt;使用max和min函数&lt;/p&gt;
-&lt;h3 id=&quot;a-向量&quot;&gt;a.向量&lt;/h3&gt;
+&lt;h5 id=&quot;a-向量&quot;&gt;a.向量&lt;/h5&gt;
 &lt;pre class=&quot;</summary>
         
       
@@ -147,7 +147,7 @@
     <link href="https://jingblog.github.io/2022/02/01/markdown-note/"/>
     <id>https://jingblog.github.io/2022/02/01/markdown-note/</id>
     <published>2022-02-01T12:30:00.000Z</published>
-    <updated>2022-02-01T12:59:09.380Z</updated>
+    <updated>2022-04-03T04:37:17.145Z</updated>
     
     
       
