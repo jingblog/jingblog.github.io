@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="友情链接, GitHub, 计科, 竞赛, 科研，计算机科学与技术，编程，开发">
+    <meta name="keywords" content="数值微分与数值积分, GitHub, 计科, 竞赛, 科研，计算机科学与技术，编程，开发">
     <meta name="description" content="计科生阿菁，笔名易安，记录生活，记录科技，记录笔记">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>友情链接 | 易安的小窝</title>
+    <title>数值微分与数值积分 | 易安的小窝</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">友情链接</h1>
+                    <h1 class="description center-align post-title">数值微分与数值积分</h1>
                 </div>
             </div>
         </div>
@@ -430,12 +430,33 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/matlab/">
+                                <span class="chip bg-color">matlab</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%A7%AF%E5%88%86/">
+                                <span class="chip bg-color">积分</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%BE%AE%E5%88%86/">
+                                <span class="chip bg-color">微分</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/matlab/" class="post-category">
+                                matlab
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -444,28 +465,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-30
+                    2022-07-04
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-30
+                    2022-07-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    2.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    11 分
                 </div>
                 
 
@@ -485,7 +506,412 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1>1.数值微分与数值积分</h1>
+<h2 id="1-数值微分">1).数值微分</h2>
+<h3 id="a-数值差分和差商的概念">a.数值差分和差商的概念</h3>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86%5C%E6%95%B0%E5%80%BC%E5%B7%AE%E5%88%86.png" alt="数值差分"></p>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86%5C%E6%95%B0%E5%80%BC%E5%B7%AE%E5%95%86.png" alt="数值差商"></p>
+<p>f(x)在x0点的==微分==接近于函数在该点的差分</p>
+<p>f(x)在x0点的==导数==接近于函数在该点的差商</p>
+<h3 id="b-向前差分函数">b.向前差分函数</h3>
+<p>diff(x) 计算向量x的一阶向前差分</p>
+<p>diff(x,n) 计算向量x的n阶向前差分</p>
+<p>diff(A,n,dim) 计算矩阵A的n阶差分，dim=1：按列计算，dim=2：按行计算</p>
+<p>注意向量长度比x少1</p>
+<p>举例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">x=0:pi/50:2*pi;
+y=sin(x);
+yy=diff(y)./diff(x);
+x=x(1:end-1);
+y=cos(x);
+plot(x,yy,x,y);
+legend('差分求导','cos(x)','Location','NorthEastOutside')
+</code></pre>
+<p>输出示例</p>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86%5C%E5%B7%AE%E5%88%86%E6%B1%82%E5%AF%BC%E5%AF%B9%E6%AF%94.png" alt="差分求导对比"></p>
+<h2 id="2-数值积分">2).数值积分</h2>
+<h3 id="a-数值积分的实现1-quadl">a.数值积分的实现1----quadl</h3>
+<p>[l,n]=quad(filename,a,b,tol,trace)</p>
+<p>[l,n]=quadl(filename,a,b,tol,trace) 精度高一些</p>
+<p>filename: 被积函数名</p>
+<p>[a,b]：积分上下限，必须是有限的，不能是无穷大(Inf)</p>
+<p>tol：积分精度，默认值为10的-6次幂</p>
+<p>trace：是否展现积分过程 ，非0：展现， 0：不展现，默认为0</p>
+<p>返回值l为定积分的值，n为被积函数的调用次数</p>
+<p>举例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">digits(10);
+format long;
+f=@(x) 4./(1+x.*x);
+[l,n]=quad(f,0,1,10^-8)
+[l,n]=quadl(f,0,1,10^-8)
+</code></pre>
+<p>输出示例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">l =   3.141592653733437
+
+n =    61
+
+l =   3.141592653589806
+
+n =   48
+</code></pre>
+<h3 id="b-数值积分的实现2-quadgk">b.数值积分的实现2----quadgk</h3>
+<p>[l,err]=quadgk(filename,a,b)</p>
+<p>filename：被积函数</p>
+<p>[a,b]：积分上下限，可以是无穷大（-Inf,Inf)，也可以是复数</p>
+<p>l：定积分值</p>
+<p>err：近似误差范围</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">format long;
+f=@(x) 1./(x.*x);
+[l,err]=quadgk(f,1,Inf)
+</code></pre>
+<p>输出示例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">l =     1
+
+err =     6.314393452555578e-17
+</code></pre>
+<h3 id="c-数值积分的实现-trapz">c.数值积分的实现----trapz</h3>
+<p>l=trapz(x,y,dim)  其中x,y是等长的向量</p>
+<p>dim=1 按行求积分，dim=2 按列求积分</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">x=0:1:6;
+y=[1,3,4,3,5,3,6];
+l=trapz(x,y)
+ll=sum(diff(x).*((y(1:end-1)+y(2:end))./2)) %实现方法
+plot(x,y,'-rp');
+grid on;
+</code></pre>
+<p>输出示例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">l =  21.500000000000000
+
+ll =  21.500000000000000
+</code></pre>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86%5C%E6%95%B0%E5%80%BC%E7%A7%AF%E5%88%86trapz.png" alt="数值积分trapz"></p>
+<h3 id="d-二重积分的数值解">d.二重积分的数值解</h3>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86%5C%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.png" alt="二重积分"></p>
+<p>l=integral2(filename,a,b,c,d)</p>
+<p>l=quad2d(filename,a,b,c,d)</p>
+<p>l=dblquad(filename,a,b,c,d)</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">f=@(x,y) exp(-x.*x./2).*sin(x.*x+y);
+ans1=integral2(f,-2,2,-1,1)
+ans2=quad2d(f,-2,2,-1,1)
+ans3=dblquad(f,-2,2,-1,1)
+</code></pre>
+<p>输出示例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">ans1 =   1.574498159253891
+
+ans2 =   1.574498141468206
+
+ans3 =   1.574493189744943
+</code></pre>
+<h3 id="e-三重积分的数值解">e.三重积分的数值解</h3>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86%5C%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86.png" alt="三重积分"></p>
+<p>l=integral3(filename,a,b,c,d,e,f)</p>
+<p>l=triplequad(filename,a,b,c,d,e,f,tol)</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">f=@(x,y,z) 4.*x.*z.*exp(-z.*z.*y-x.*x);
+ans1=integral3(f,0,pi,0,pi,0,1)
+ans3=triplequad(f,0,pi,0,pi,0,1,10^-10)
+</code></pre>
+<p>输出示例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">ans1 =   1.732762223027684
+
+ans3 =   1.732762222841299
+</code></pre>
+<h1>2.线性方程组求解</h1>
+<h2 id="1-线性方程组的直接解法">1).线性方程组的直接解法</h2>
+<h3 id="a-左除运算符">a.左除运算符</h3>
+<p>对于线性方程组Ax=b，则x=A\b</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">A=[2,1,-5,1;
+   1,-5,0,7;
+   0,2,1,-1;
+   1,6,-1,-4];
+b=[13,-9,6,0]';
+x=A\b
+</code></pre>
+<p>输出示例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">x =
+ -66.555555555555543
+  25.666666666666664
+ -18.777777777777775
+  26.555555555555550
+</code></pre>
+<h3 id="b-利用矩阵分解求解">b.利用矩阵分解求解</h3>
+<h2 id="2-线性方程组的迭代解法">2).线性方程组的迭代解法</h2>
+<h3 id="a-雅可比迭代法">a.雅可比迭代法</h3>
+<h3 id="b-高斯-赛德尔迭代法">b.高斯-赛德尔迭代法</h3>
+<h1>3.非线性方程求解</h1>
+<h2 id="1-fzero函数">1).fzero函数</h2>
+<p>x=fzero(filename,x0)</p>
+<p>filename：待求根方程左端的函数表达式</p>
+<p>x0：初值</p>
+<p>执行的是数据搜索过程</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">f=@(x) x-1./x+5;
+ans1=fzero(f,-5)
+ans2=fzero(f,1)
+
+x=-10:0.01:10;
+y=x-1./x+5;
+plot(x,y)
+grid on;
+</code></pre>
+<p>输出示例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">ans1 =  -5.192582403567252
+
+ans2 =   0.192582403567252
+</code></pre>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86/%E9%9D%9E%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E6%B1%82%E8%A7%A3fzero.png" alt="非线性方程求解fzero"></p>
+<h2 id="2-fsolve函数">2).fsolve函数</h2>
+<p>x=fsolve(filename,x0,option)</p>
+<p>filename：待求根方程左端的函数表达式</p>
+<p>x0：初值</p>
+<p>option：优化工具箱的优化参数，调用optimset函数完成</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">f=@(x) x-1./x+5;
+ans1=fsolve(f,-5,optimset('Display','Off'))
+ans2=fsolve(f,1,optimset('Display','Off'))
+
+x=-10:0.01:10;
+y=x-1./x+5;
+plot(x,y)
+grid on;
+</code></pre>
+<p>输出示例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">ans1 =  -5.192582403048145
+
+ans2 =   0.192582403567235
+</code></pre>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86/%E9%9D%9E%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E6%B1%82%E8%A7%A3fzero.png" alt="非线性方程求解fzero"></p>
+<p>fsolve函数可以对方程组进行求解</p>
+<p>举例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">f=@(x) [sin(x(1))+x(2)+x(3).^2.*exp(x(1)),x(1)+x(2)+x(3),x(1).*x(2).*x(3)];
+t=[1,1,1];
+ans=fsolve(f,[1,1,1],optimset('Display','Off'))
+x=f(ans)
+</code></pre>
+<p>输出示例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">ans =   0.022381575402104  -0.022380299910932  -0.000001275491172
+
+x =
+   1.0e-06 *
+  -0.593079133408355  -0.000000000001941   0.000638901652815
+</code></pre>
+<h1>4.函数极值的计算</h1>
+<h2 id="1-无约束最优化问题">1).无约束最优化问题</h2>
+<p>求最小值函数</p>
+<p>[xmin,fmin]=fminbnd(filename,x1,x2,option)</p>
+<p>[xmin,fmin]=fminsearch(filename,x0,option)</p>
+<p>[xmin,fmin]=fminunc(filename,x0,option)</p>
+<p>filename：目标函数</p>
+<p>x1,x2：左右边界</p>
+<p>x0：一个向量，表示极值点的初值</p>
+<p>option：优化参数，调用optimset函数</p>
+<p>xmin：极小值</p>
+<p>fmin：最小值</p>
+<p>举例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">f=@(x) x-1./x+5;
+[xmin,fmin]=fminbnd(f,-10,-1,optimset('Display','Off'))
+[xmin,fmin]=fminbnd(f,1,10,optimset('Display','Off'))
+</code></pre>
+<p>输出示例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">xmin =  -9.999946678462546
+
+fmin =  -4.899946145244328
+
+xmin =   1.000053455645318
+
+fmin =   5.000106908433283
+</code></pre>
+<h2 id="2-有约束最优化问题">2).有约束最优化问题</h2>
+<p>[xmin,fmin]=fmincon(filename,x0,A,b,Aeq,beq,Lbnd,Ubnd,NonF,option)</p>
+<p>filename：目标函数</p>
+<p>x0：一个向量，表示极值点的初值</p>
+<p>option：优化参数，调用optimset函数</p>
+<p>xmin：最小值点</p>
+<p>fmin：最小值</p>
+<p>其余参数为约束条件，包括线性不等式约束、线性等式约束、x的下界和上界以及定义非线性约束的函数。如果某个约束不存在，则用空矩阵来表示。</p>
+<p>举例</p>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86/%E6%9C%89%E7%BA%A6%E6%9D%9F%E8%A7%84%E5%88%92%E9%97%AE%E9%A2%98.png" alt="有约束规划问题"></p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">% fun.m
+function f=fun(x)
+f=(x(1)-2)^2+(x(2)-1)^2+(x(3)-7)^2+(x(4)-9)^2
+end
+
+% yfun.m
+function [m,n]=yfun(x)
+m=-1*(x(1)^2/4-x(2)^2+x(3)-x(4)^2+1)
+n=x(1)^2+x(2)-x(3)+x(4)-99
+end
+
+% 脚本文件
+x0=[0;0;0;0];
+A=[-1,2,-1,1;
+   -2,-1,2,-1];
+b=[-0.4;-0.5];
+lb=[-100;-100;0;0];
+ub=[100;100;10;10];
+[xmin,fmin]=fmincon(@fun,x0,A,b,[],[],lb,ub,@yfun)
+</code></pre>
+<p>输出示例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">xmin =
+   9.975955645177839
+   0.803897345426697
+   7.001160888012390
+   5.677572508024824
+
+fmin =  74.692850492068359
+</code></pre>
+<h1>5.常微分方程数值求解</h1>
+<h2 id="1-一般概念">1).一般概念</h2>
+<p>所谓数值解法就是求未知函数在一系列离散点处的近似值</p>
+<p>单步法：求y(n+1)时只用到y(n)</p>
+<p>多步法：求y(n+1)时，不仅用到y(n)，还要用到y(n-p),其中p=1，2，…，k,k&gt;0的值。</p>
+<h2 id="2-求解函数">2).求解函数</h2>
+<p>[t,y]=solver(filename,tspan,y0,option)</p>
+<p>solver为使用的函数名。</p>
+<p>==注意solver不是一种函数==！！！</p>
+<p>filename：函数名</p>
+<p>tspan：形式为[t0,tf]，表示求解区间</p>
+<p>y0：初始状态向量</p>
+<p>option：设置参数</p>
+<p>t：时间向量</p>
+<p>y：数值解</p>
+<p>其中求解函数solver包括：</p>
+<ul>
+<li>ode45 非刚性微分方程，中等精度，最主要的求解函数</li>
+<li>ode23 非刚性微分方程，低等精度</li>
+<li>ode113 非刚性微分方程</li>
+<li>ode15s  刚性微分方程和微分代数方程 s:stiff</li>
+<li>ode23s 刚性微分方程</li>
+<li>ode23t  适度刚醒微分方程和微分代数方程</li>
+<li>ode23tb 刚性微分方程</li>
+<li>ode15i全隐式微分方程</li>
+</ul>
+<p>举例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">f=@(t,y) (y^2-t-2)/(4*t+4);
+[t,s]=ode23(f,[0,10],[2])
+
+x=0:0.1:10;
+y=(x+1).^(1/2)+1;
+plot(x,y,'b',t,s,'rp')
+legend('标准值','数值解','Location','NorthEastOutside')
+axis([0,10,0,10]);
+</code></pre>
+<p>输出示例</p>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8Bode23.png" alt="常微分方程ode23"></p>
+<p>使用ode45函数</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">f=@(t,y) (y^2-t-2)/(4*t+4);
+[t,s]=ode45(f,[0,10],[2])
+
+x=0:0.1:10;
+y=(x+1).^(1/2)+1;
+plot(x,y,'b',t,s,'rp')
+legend('标准值','数值解','Location','NorthEastOutside')
+axis([0,10,0,10]);
+</code></pre>
+<p>输出示例</p>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8Bode45.png" alt="常微分方程ode45"></p>
+<p>该求解函数是为一阶微分方程设计的，求解高阶微分方程，需要先转换为一阶微分方程组。</p>
+<h2 id="3-刚性问题">3).刚性问题</h2>
+<p>常微分方程解的分量有的变化很快，有的变化很慢，且相差悬殊，这就是所谓的刚性问题。</p>
+<p>举例</p>
+<p>使用ode45函数</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">lamda=10^-5;
+f=@(t,y) y^2-y^3;
+tspan=[0,2/lamda];
+tic;
+[t,y]=ode45(f,tspan,lamda);
+toc;
+disp(['计算的点数',num2str(length(t))])
+</code></pre>
+<p>输出示例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">历时 0.131789 秒。
+计算的点数120565
+</code></pre>
+<p>使用ode23s函数</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">lamda=10^-5;
+f=@(t,y) y^2-y^3;
+tspan=[0,2/lamda];
+tic;
+[t,y]=ode23s(f,tspan,lamda);
+toc;
+disp(['计算的点数',num2str(length(t))])
+
+</code></pre>
+<p>输出示例</p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">历时 0.005314 秒。
+计算的点数66
+</code></pre>
+<h1>6.偏微分方程数值求解</h1>
+<p>使用pdepe函数</p>
+<p>solution=pdepe(m,pdefun,icfun,bcfun,xmesh,tspan,options)</p>
+<p>solution：x,t相应值对应的偏微分方程数值解</p>
+<p>m：平板为0，柱状为1，球面为2</p>
+<p>pdefun：定义函数句柄</p>
+<p>icfun：初始条件函数句柄</p>
+<p>bcfun：边界条件函数句柄</p>
+<p>xmesh：向量，用于指定需要针对tspan中每个值求数值解的点</p>
+<p>tspan：向量，用于指定需要针对xmesh中每个值求解的点</p>
+<p>options：大多数情况下选默认值即可</p>
+<h2 id="1-pdefun-m函数文件格式">1).pdefun.m函数文件格式</h2>
+<p>先将偏微分方程转化为如下形式：</p>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86/%E5%85%AC%E5%BC%8F1.png" alt="公式1"></p>
+<p>function [c,f,s]=pdefun(x,t,u,ux)</p>
+<p>其中c,f,s均表示上式中的c,f,s，u为上式中的u，ux为u对x的偏导</p>
+<h2 id="2-icfun-m函数文件格式">2).icfun.m函数文件格式</h2>
+<p>将初值函数转化为如下格式：</p>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86/%E5%85%AC%E5%BC%8F2.png" alt="公式2"></p>
+<p>function u0=icfun(x)</p>
+<p>其中u0表示初值</p>
+<h2 id="3-bcfun-m函数文件格式">3).bcfun.m函数文件格式</h2>
+<p>将边界条件转化为以下格式：</p>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86/%E5%85%AC%E5%BC%8F3.png" alt="公式3"></p>
+<p>function [pl,ql,pr,qr]=bcfun(xl,ul,xr,ur,t)：</p>
+<p>ul是左边界xl=a的近似解，ur是右边界xr=a的近似解。对于左边界pl,ql，需要用ul,对于右边界pr,qr，需要用ur。</p>
+<h2 id="4-例题">4).例题</h2>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86/%E5%81%8F%E5%BE%AE%E5%88%86%E4%BE%8B%E9%A2%981.png" alt="偏微分例题1"></p>
+<p>转换形式</p>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86/%E5%81%8F%E5%BE%AE%E5%88%86%E4%BE%8B%E9%A2%98%E5%88%86%E6%9E%90.png" alt="偏微分例题分析"></p>
+<pre class=" language-language-matlab"><code class="language-language-matlab">% fun.m函数文件
+function [c,f,s]=fun(x,t,u,ux)
+c=[1;1];
+f=[0.024*ux(1);0.017*ux(2)];
+y=u(1)-u(2);
+F=exp(5.73*y)-exp(-11.46*y);
+s=[-F;F];
+end
+
+% funstart.m函数文件
+function u0=funstart(x)
+u0=[1;0];
+end
+
+% pdeboundary.m函数文件
+function [pl,ql,pr,qr]=pdeboundary(xl,ul,xr,ur,t)
+pl=[0;ul(2)];
+ql=[1;0];
+pr=[ur(1)-1;0];
+qr=[0;1];
+end
+
+%脚本文件
+x=linspace(0,5,100);
+t=linspace(10,20,100);
+s=pdepe(0,@fun,@funstart,@pdeboundary,x,t);
+
+figure;
+surf(x,t,s(:,:,1));
+xlabel('x');
+ylabel('t');
+zlabel('s');
+title('u1');
+figure;
+surf(x,t,s(:,:,2));
+xlabel('x');
+ylabel('t');
+zlabel('s');
+title('u2');
+</code></pre>
+<p>输出示例</p>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86/%E5%81%8F%E5%BE%AE%E5%88%86%E4%BE%8B%E9%A2%98u1.png" alt="偏微分例题u1"></p>
+<p><img src="%E6%95%B0%E5%80%BC%E5%BE%AE%E7%A7%AF%E5%88%86/%E5%81%8F%E5%BE%AE%E5%88%86%E4%BE%8B%E9%A2%98u2.png" alt="偏微分例题u2"></p>
+
                 
             </div>
             <hr/>
@@ -511,7 +937,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jingblog.github.io/link/index.html">https://jingblog.github.io/link/index.html</a>
+                    <a href="https://jingblog.github.io/2022/07/04/shu-zhi-wei-ji-fen-yu-fang-cheng-qiu-jie/">https://jingblog.github.io/2022/07/04/shu-zhi-wei-ji-fen-yu-fang-cheng-qiu-jie/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -548,7 +974,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/matlab/">
+                                    <span class="chip bg-color">matlab</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%A7%AF%E5%88%86/">
+                                    <span class="chip bg-color">积分</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%BE%AE%E5%88%86/">
+                                    <span class="chip bg-color">微分</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -721,13 +1159,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/link/index.html">
+                <a href="/2022/07/04/shu-zhi-wei-ji-fen-yu-fang-cheng-qiu-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="友情链接">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="数值微分与数值积分">
                         
-                        <span class="card-title">友情链接</span>
+                        <span class="card-title">数值微分与数值积分</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -738,17 +1176,37 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-04
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            易安
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/matlab/" class="post-category">
+                                    matlab
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/matlab/">
+                        <span class="chip bg-color">matlab</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%A7%AF%E5%88%86/">
+                        <span class="chip bg-color">积分</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%BE%AE%E5%88%86/">
+                        <span class="chip bg-color">微分</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -756,16 +1214,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/link/index.html">
+                <a href="/2022/04/03/matlab-data1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="友情链接">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="数据分析与多项式计算">
                         
-                        <span class="card-title">友情链接</span>
+                        <span class="card-title">数据分析与多项式计算</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -776,17 +1234,36 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-03
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            易安
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/MATLAB/" class="post-category">
+                                    MATLAB
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%B9%B2%E8%B4%A7/">
+                        <span class="chip bg-color">干货</span>
+                    </a>
+                    
+                    <a href="/tags/MATLAB/">
+                        <span class="chip bg-color">MATLAB</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">
+                        <span class="chip bg-color">数据分析</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>

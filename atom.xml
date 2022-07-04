@@ -6,7 +6,7 @@
   <link href="https://jingblog.github.io/atom.xml" rel="self"/>
   
   <link href="https://jingblog.github.io/"/>
-  <updated>2022-04-03T04:39:24.452Z</updated>
+  <updated>2022-07-04T00:46:33.793Z</updated>
   <id>https://jingblog.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数值微分与数值积分</title>
+    <link href="https://jingblog.github.io/2022/07/04/shu-zhi-wei-ji-fen-yu-fang-cheng-qiu-jie/"/>
+    <id>https://jingblog.github.io/2022/07/04/shu-zhi-wei-ji-fen-yu-fang-cheng-qiu-jie/</id>
+    <published>2022-07-04T01:00:00.000Z</published>
+    <updated>2022-07-04T00:46:33.793Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;1.数值微分与数值积分&lt;/h1&gt;
+&lt;h2 id=&quot;1-数值微分&quot;&gt;1).数值微分&lt;/h2&gt;
+&lt;h3 id=&quot;a-数值差分和差商的概念&quot;&gt;a.数值差分和差商的概念&lt;/h3&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="matlab" scheme="https://jingblog.github.io/categories/matlab/"/>
+    
+    
+    <category term="matlab" scheme="https://jingblog.github.io/tags/matlab/"/>
+    
+    <category term="积分" scheme="https://jingblog.github.io/tags/%E7%A7%AF%E5%88%86/"/>
+    
+    <category term="微分" scheme="https://jingblog.github.io/tags/%E5%BE%AE%E5%88%86/"/>
+    
+  </entry>
   
   <entry>
     <title>数据分析与多项式计算</title>
